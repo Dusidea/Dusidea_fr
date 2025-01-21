@@ -1,0 +1,91 @@
+/****** General ***********/
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* * {
+   border: 1px solid red; /* Facilite la visualisation 
+}  */
+
+:root {
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  /* Cache les débordements horizontaux non voulus */
+  overflow-y: auto;
+  /* Active la scrollbar verticale */
+  min-height: 100%;
+  align-items: center;
+  /* permet de centrer le contenu en affichant des marges sur les grandes résolutions large desktop */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  /* Cache les débordements horizontaux non voulus */
+  overflow-y: auto;
+  /* Active la scrollbar verticale */
+  /* min-height: 100%; */
+  max-width: 1440px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.main-container {
+  max-width: 100%;
+  max-width: 1440px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  border: 1px solid transparent; /* Prévenir la collapse */
+  overflow: hidden; /* Si besoin */
+}
+
+.mainandfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 100%;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  /* height: 80vh; */
+  /* height: 100%; */
+  /* max-width: 100%; */
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-colored {
+  background-color: purple;
+}
